@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color:grey;
+  min-height: 100vh;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+
+[class*="App-menuHeader-"] {
+  background-color: grey;
+  display: inline-flex;
+  flex-direction: left;
+  box-sizing: border-box;  
+  height:auto;
+  float: left;
+  position: relative;
+  margin: 0 1.6%;
+  border:1px solid black;
+}
+
+.App-menuHeader-0 {width: 30%;}
+.App-menuHeader-1 {width: 30%;}
+.App-menuHeader-2 {width: 30%;}
+
+[class*="App-sectionTitle-"] {
+  position: absolute;
+  top:0;
+  right:0;
+  padding-left: 5px ;
+  padding-right: 5px;
+  height: 25px;
+  width: 100px;
+  background-color: cadetblue;
+  color: white;
+  border-left: 1px solid black ;
+  border-bottom: 1px solid black ;
+}
+
+.App-sectionTitle-0{background-color: indianred;}
+.App-sectionTitle-1{background-color: honeydew; color: black;}
+.App-sectionTitle-2{background-color: lightgreen;}
+
+.App-para{
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 998px) {
+  .App-menuHeader-0{
+    width: 40%;
+    margin:  15px 5%;
+  }
+  .App-menuHeader-1{
+    width: 40%;
+    margin: 15px 5% 15px 0;
+  }
+  .App-menuHeader-2{
+    width: 85%;
+    margin: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .App-menuHeader-0{
+    width: 90%;
+    margin: 15px 5%;
+  }
+  .App-menuHeader-1{
+    width: 90%;
+    margin: 15px 5%;
+  }
+  .App-menuHeader-2{
+    width: 90%;
+    margin: 15px 5%;
+  }
+}
